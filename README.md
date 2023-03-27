@@ -31,6 +31,7 @@ Here are the few I found
 ```
 
 ### Output
+Without Furniture
 ```ps
 C:\Users\Saura\PycharmProjects\GALab\venv\Scripts\python.exe C:\Users\Saura\PycharmProjects\GALab\main.py 
 The best individual in generation 1 is: 0.96625
@@ -57,6 +58,46 @@ The best individual in generation 21 is: 0.99625
 The best individual in generation 22 is: 0.9975
 The best individual in generation 23 is: 1.0
 Found Solution:  [1, 0, 1, 1, 3, 2, 0, 2, 2, 2, 3, 3, 0, 3, 2, 3, 0, 2, 2, 1, 0, 2, 3, 1, 2, 1, 0, 2, 3, 3, 2, 2, 2, 3, 3, 2, 2, 3, 2, 3, 0, 1, 2, 2, 2, 2, 1, 2, 2, 3, 2, 0, 0, 1]
+
+Process finished with exit code 0
+```
+
+With 25% (i.e. 0.25 * 200 = 50) furnitures
+```ps
+C:\Users\Saura\PycharmProjects\GALab\venv\Scripts\python.exe C:\Users\Saura\PycharmProjects\GALab\main.py 
+The room (furniture displayed using -) is: 
+-     - -             --        - -  -  
+-        --  -    -  -     -          --
+   -   ---      -           - -         
+    -           -    -  -  -      -     
+ -     -  -      -     -   -  - -      -
+    -          - - - --              -  
+ -   --      - --  -  -          - -   -
+ - - -              - -               - 
+  -     --        -  -   --- -   -  -   
+         - - --     -               --  
+      -    - -     -     -  --- -  -  --
+   - - --         --    --        -    -
+ -      -  -                   --    - -
+    -- -   -- -  -     - -   --         
+ - --    --     -  -    -         -  -  
+    -   -- -        --    -         -  -
+    -     -  -  - -  -   - - -          
+  -     - -- -  -    -   - -  - --      
+  - -      -        --     -  -   - -   
+  -   - -   -  -      -- --  -  --  -  -
+The best individual in generation 1 is: 0.92625
+The best individual in generation 2 is: 0.9875
+The best individual in generation 3 is: 0.95875
+The best individual in generation 4 is: 0.85625
+The best individual in generation 5 is: 0.98375
+The best individual in generation 6 is: 0.9625
+The best individual in generation 7 is: 0.97625
+The best individual in generation 8 is: 0.99125
+The best individual in generation 9 is: 0.98625
+The best individual in generation 10 is: 0.995
+The best individual in generation 11 is: 1.0
+Found Solution:  [1, 3, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 2, 3, 0, 1, 0, 3, 3, 3, 2, 1, 2, 2, 2, 3, 2, 3, 3, 1, 3, 1, 3, 2, 0, 3, 2, 2, 1, 3, 2, 3, 3, 3, 1, 2, 2, 2, 2, 0, 3, 3]
 
 Process finished with exit code 0
 ```
