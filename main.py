@@ -1,14 +1,8 @@
 # Genetic Algorithm Implementation
 # Full code by Saurav Adhikari <github.com/ersauravadhikari>
 import math
-
-import numpy as np
-
 from consts import POPULATION_SIZE
 from models import Individual
-
-# Setting up the default environment
-play_environment = np.zeros((8, 7))
 
 # The individual in this scenario is the rules
 current_population = []
@@ -21,15 +15,11 @@ for _ in range(POPULATION_SIZE):
 def population_selection(population):
     """
     Does genetic selection
+    10% is elite
+    10% is random generation
+    Remaining is tournament
     :return: selected population
     """
-
-    """
-    # 10% is elite
-    # 10% is random generation
-    # Remaining is tournament
-    """
-
     sorted_current = sorted(current_population, key=lambda x: x.fitness, reverse=True)
 
     ten_percentage = math.floor(POPULATION_SIZE / 10)
@@ -48,8 +38,6 @@ best = Individual.find_best(current_population)
 itr_count = 0
 
 while best.fitness < 1:
-    # A simple check to see that the random population generation is indeed working
-
     itr_count += 1
 
     # Selection
