@@ -7,6 +7,23 @@ I coded this in a hurry, Assignment is due today and there's an exam tommorow so
 But I think it works, finds the solution in resonable time
 ![image](https://user-images.githubusercontent.com/69170305/227851368-239bb876-f564-4169-a642-d4ed1fd69688.png)
 
+### Solution
+There can be numerous solution. Every time you try, you might find a new one
+
+Here are the few I found
+```
+[3, 1, 0, 1, 0, 3, 0, 0, 0, 1, 0, 2, 0, 0, 2, 3, 0, 1, 2, 2, 1, 2, 2, 1, 2, 0, 3, 1, 0, 2, 3, 1, 3, 1, 3, 3, 0, 2, 0, 3, 1, 1, 3, 2, 1, 2, 3, 2, 2, 2, 0, 1, 2, 0]
+```
+
+```
+[1, 2, 1, 1, 1, 0, 0, 3, 3, 2, 2, 3, 0, 2, 1, 0, 0, 2, 0, 3, 2, 0, 2, 0, 2, 2, 2, 2, 2, 1, 1, 1, 1, 3, 1, 2, 2, 2, 3, 0, 0, 3, 3, 1, 0, 2, 0, 0, 2, 3, 3, 3, 1, 0]
+```
+
+```
+[2, 2, 0, 3, 0, 0, 2, 3, 1, 1, 2, 0, 2, 3, 0, 3, 0, 0, 0, 2, 1, 1, 1, 2, 1, 2, 2, 1, 2, 3, 0, 3, 1, 1, 0, 3, 1, 3, 3, 1, 1, 2, 3, 3, 3, 2, 3, 3, 3, 3, 2, 1, 2, 3]
+```
+
+
 ### Qn.
 Scenario and Problem to be solved
 Let’s imagine, we have a painter robot similar to the robot which picked up cans in the lectures.
@@ -27,17 +44,10 @@ Note that c ∈ {0, 2} and f, l, r ∈ {0, 1, 2} so there are 2 × 33 = 54 possi
 represented by a zero, while furniture or extra walls are represented by ones. Outside
 walls are automatically created by painter_play().
 
-IOE
 The function painter_play() then uses the rule set to guide a painter, initially placed in the room
 with a random position and direction, until the paint can is empty. Note that the painter does not
 move when it tries to walk into a wall or furniture. The efficiency (total fraction of paintable
 space covered) is then given as an output, as well as the X-Y trajectory (i.e. the positions of the
 painter at each time step) of the painter. To see that the painter works, you can try passing it an
 empty room for an environment and a trivial chromosome. For example, a chromosome
-consisting of all 3s produces a kind of random walk. Now
-
-
-### Solution
-```
-[3, 1, 0, 1, 0, 3, 0, 0, 0, 1, 0, 2, 0, 0, 2, 3, 0, 1, 2, 2, 1, 2, 2, 1, 2, 0, 3, 1, 0, 2, 3, 1, 3, 1, 3, 3, 0, 2, 0, 3, 1, 1, 3, 2, 1, 2, 3, 2, 2, 2, 0, 1, 2, 0]
-```
+consisting of all 3s produces a kind of random walk. 
