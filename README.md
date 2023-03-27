@@ -65,39 +65,46 @@ Process finished with exit code 0
 With 25% (i.e. 0.25 * 200 = 50) furnitures
 ```ps
 C:\Users\Saura\PycharmProjects\GALab\venv\Scripts\python.exe C:\Users\Saura\PycharmProjects\GALab\main.py 
-The room (furniture displayed using -) is: 
--     - -             --        - -  -  
--        --  -    -  -     -          --
-   -   ---      -           - -         
-    -           -    -  -  -      -     
- -     -  -      -     -   -  - -      -
-    -          - - - --              -  
- -   --      - --  -  -          - -   -
- - - -              - -               - 
-  -     --        -  -   --- -   -  -   
-         - - --     -               --  
-      -    - -     -     -  --- -  -  --
-   - - --         --    --        -    -
- -      -  -                   --    - -
-    -- -   -- -  -     - -   --         
- - --    --     -  -    -         -  -  
-    -   -- -        --    -         -  -
-    -     -  -  - -  -   - - -          
-  -     - -- -  -    -   - -  - --      
-  - -      -        --     -  -   - -   
-  -   - -   -  -      -- --  -  --  -  -
-The best individual in generation 1 is: 0.92625
-The best individual in generation 2 is: 0.9875
-The best individual in generation 3 is: 0.95875
-The best individual in generation 4 is: 0.85625
-The best individual in generation 5 is: 0.98375
-The best individual in generation 6 is: 0.9625
-The best individual in generation 7 is: 0.97625
-The best individual in generation 8 is: 0.99125
-The best individual in generation 9 is: 0.98625
-The best individual in generation 10 is: 0.995
-The best individual in generation 11 is: 1.0
-Found Solution:  [1, 3, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 2, 3, 0, 1, 0, 3, 3, 3, 2, 1, 2, 2, 2, 3, 2, 3, 3, 1, 3, 1, 3, 2, 0, 3, 2, 2, 1, 3, 2, 3, 3, 3, 1, 2, 2, 2, 2, 0, 3, 3]
+The room ['|' is furniture, '-' is empty room] is: 
+-|-----|-||-------|-|---|--|------|-----
+-|--|----|------|----|----------|--|-|-|
+|----|||--|-------||--|-------------||--
+------|------|--||-|||-|----||------||--
+------|----|---|-|---|--|-----|-------|-
+-|-----|--||--|----|---|----|-|---------
+|-------|--|-----|||---|---|--||---|||--
+---|--|--------|-|--|----|------|------|
+-|---|---------|--|-----------||--|||--|
+--|||-||||----|--|----|||--|-----|------
+-|---||----|-|------------|---|---------
+--------------|-|---------|||--------|--
+---|---|-||--|-|-------|--|--|---||-|--|
+---||--|-|||--|-||--|----------|---|-||-
+---------|||-|-----||-----|-------------
+-------|-|--|---|--|----------||---|----
+----|---------|----|------||---||-------
+--|--||--|-|-|--|--------|--|---||---|--
+--|-|-----|----|----||------|----|--||||
+|-|---------|----|-|----||----|---------
+The best individual in generation 1 is: 0.8675
+The best individual in generation 2 is: 0.96875
+The best individual in generation 3 is: 0.965
+The best individual in generation 4 is: 0.965
+The best individual in generation 5 is: 0.95125
+The best individual in generation 6 is: 0.97625
+The best individual in generation 7 is: 0.91125
+The best individual in generation 8 is: 0.97625
+The best individual in generation 9 is: 0.97625
+The best individual in generation 10 is: 0.97125
+The best individual in generation 11 is: 0.96375
+The best individual in generation 12 is: 0.97125
+The best individual in generation 13 is: 0.97625
+The best individual in generation 14 is: 0.9825
+The best individual in generation 15 is: 0.97375
+The best individual in generation 16 is: 0.97875
+The best individual in generation 17 is: 0.9975
+The best individual in generation 18 is: 1.0
+Found Solution:  [2, 1, 0, 0, 0, 1, 0, 3, 3, 0, 3, 1, 0, 2, 0, 1, 0, 0, 1, 0, 0, 2, 3, 1, 2, 3, 3, 0, 1, 2, 3, 0, 3, 2, 3, 2, 1, 0, 3, 3, 1, 1, 3, 2, 1, 1, 1, 2, 0, 3, 1, 3, 1, 0]
 
 Process finished with exit code 0
 ```
