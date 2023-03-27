@@ -5,7 +5,6 @@ An application of genetic algorithm for painter's problem
 I coded this in a hurry, Assignment is due today and there's an exam tommorow so there might be sth wrong with this.
 
 But I think it works, finds the solution in resonable time
-![image](https://user-images.githubusercontent.com/69170305/227851368-239bb876-f564-4169-a642-d4ed1fd69688.png)
 
 ### Solution
 There can be numerous solution. Every time you try, you might find a new one
