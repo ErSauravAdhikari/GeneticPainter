@@ -35,3 +35,9 @@ space covered) is then given as an output, as well as the X-Y trajectory (i.e. t
 painter at each time step) of the painter. To see that the painter works, you can try passing it an
 empty room for an environment and a trivial chromosome. For example, a chromosome
 consisting of all 3s produces a kind of random walk. Now
+
+
+### Solution
+```
+[3, 1, 0, 1, 0, 3, 0, 0, 0, 1, 0, 2, 0, 0, 2, 3, 0, 1, 2, 2, 1, 2, 2, 1, 2, 0, 3, 1, 0, 2, 3, 1, 3, 1, 3, 3, 0, 2, 0, 3, 1, 1, 3, 2, 1, 2, 3, 2, 2, 2, 0, 1, 2, 0]
+```
