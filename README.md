@@ -61,6 +61,8 @@ Found Solution:  [1, 0, 1, 1, 3, 2, 0, 2, 2, 2, 3, 3, 0, 3, 2, 3, 0, 2, 2, 1, 0,
 Process finished with exit code 0
 ```
 
+#### Note 2:
+Change the mutation rate to be higher, this will result in finding the solution faster. The rate is 0.0002 because it is dicated by the question. 
 
 ### Qn.
 Scenario and Problem to be solved
@@ -89,3 +91,28 @@ space covered) is then given as an output, as well as the X-Y trajectory (i.e. t
 painter at each time step) of the painter. To see that the painter works, you can try passing it an
 empty room for an environment and a trivial chromosome. For example, a chromosome
 consisting of all 3s produces a kind of random walk. 
+
+Now do the following:
+
+**Assignment (1)**: Think of a simple strategy for the painter to cover a lot of space in an empty
+room. Describe this strategy in a few words or sketch it, but do not try to encode it in the
+chromosome.
+
+**Assignment (2)**: Create 50 random chromosomes in a 50x54 matrix, as well as a 20x40 empty
+room. Create a genetic algorithm to evolve this population over 200 generations, playing each
+chromosome several times and storing the chromosomes average efficiency as the fitness.
+You may choose any rule for picking the next generation from the previous one so long as it
+includes crossovers and mutation and that individuals with higher fitness are more likely to have
+offspring in next generation. (An example is to use single-point crossover with a mutation rate of
+0.002 per locus per generation.) Plot the final set of chromosomes. Plot an example trajectory of
+one of the more successful chromosomes (or make a video). Is this what you expected?
+
+**Assignment (3)**: Plot the average fitness in the population vs generation. You will likely see
+large sudden jumps in fitness, corresponding to strategic innovations. In your own words, write
+down two possible examples of an innovation that would increase fitness.
+
+**Assignment (4)**: Add some furniture to the empty room (about 100 square metres in total) and
+use one of your highly evolved chromosomes, and plot the trajectory (or make a video). How
+does the efficiency compare to that in an empty room? If the strategy fails, how does it fail? Now
+try running the genetic algorithm with your new furnished room from the start. How does the
+strategy compare to the empty room strategy?
