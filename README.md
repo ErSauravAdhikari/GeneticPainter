@@ -62,7 +62,7 @@ Found Solution:  [1, 0, 1, 1, 3, 2, 0, 2, 2, 2, 3, 3, 0, 3, 2, 3, 0, 2, 2, 1, 0,
 Process finished with exit code 0
 ```
 
-With 25% (i.e. 0.25 * 200 = 50) furnitures
+With 25% probablity of a place having a furniture
 ```ps
 C:\Users\Saura\PycharmProjects\GALab\venv\Scripts\python.exe C:\Users\Saura\PycharmProjects\GALab\main.py 
 The room ['|' is furniture, '-' is empty room] is: 
