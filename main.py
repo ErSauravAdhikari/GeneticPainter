@@ -52,8 +52,12 @@ while best.fitness < 1:
 
     itr_count += 1
 
-    # Selection method
-    selected_population = population_selection(current_population)
+    # Selection
+    # Method 1: More complex selection algorithm
+    # selected_population = population_selection(current_population)
+
+    # Method 2: Simpler tournament only algorithm
+    selected_population = Individual.selection(current_population)
 
     # Mutation
     for ind in selected_population:
