@@ -13,7 +13,7 @@ But I think it works, finds the solution in resonable time
 ### Solution
 There can be numerous solution. Every time you try, you might find a new one
 
-Here are the few I found
+Here are the few I found (without furnitures) @ size (20, 40)
 ```
 [3, 1, 0, 1, 0, 3, 0, 0, 0, 1, 0, 2, 0, 0, 2, 3, 0, 1, 2, 2, 1, 2, 2, 1, 2, 0, 3, 1, 0, 2, 3, 1, 3, 1, 3, 3, 0, 2, 0, 3, 1, 1, 3, 2, 1, 2, 3, 2, 2, 2, 0, 1, 2, 0]
 ```
