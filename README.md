@@ -23,6 +23,41 @@ Here are the few I found
 [2, 2, 0, 3, 0, 0, 2, 3, 1, 1, 2, 0, 2, 3, 0, 3, 0, 0, 0, 2, 1, 1, 1, 2, 1, 2, 2, 1, 2, 3, 0, 3, 1, 1, 0, 3, 1, 3, 3, 1, 1, 2, 3, 3, 3, 2, 3, 3, 3, 3, 2, 1, 2, 3]
 ```
 
+```
+[1, 0, 1, 1, 3, 2, 0, 2, 2, 2, 3, 3, 0, 3, 2, 3, 0, 2, 2, 1, 0, 2, 3, 1, 2, 1, 0, 2, 3, 3, 2, 2, 2, 3, 3, 2, 2, 3, 2, 3, 0, 1, 2, 2, 2, 2, 1, 2, 2, 3, 2, 0, 0, 1]
+```
+
+### Output
+```ps
+C:\Users\Saura\PycharmProjects\GALab\venv\Scripts\python.exe C:\Users\Saura\PycharmProjects\GALab\main.py 
+The best individual in generation 1 is: 0.96625
+The best individual in generation 2 is: 0.9275
+The best individual in generation 3 is: 0.8725
+The best individual in generation 4 is: 0.91625
+The best individual in generation 5 is: 0.92125
+The best individual in generation 6 is: 0.9775
+The best individual in generation 7 is: 0.96125
+The best individual in generation 8 is: 0.97625
+The best individual in generation 9 is: 0.99
+The best individual in generation 10 is: 0.97375
+The best individual in generation 11 is: 0.9775
+The best individual in generation 12 is: 0.97875
+The best individual in generation 13 is: 0.98625
+The best individual in generation 14 is: 0.9975
+The best individual in generation 15 is: 0.98375
+The best individual in generation 16 is: 0.98625
+The best individual in generation 17 is: 0.9875
+The best individual in generation 18 is: 0.995
+The best individual in generation 19 is: 0.9975
+The best individual in generation 20 is: 0.9975
+The best individual in generation 21 is: 0.99625
+The best individual in generation 22 is: 0.9975
+The best individual in generation 23 is: 1.0
+Found Solution:  [1, 0, 1, 1, 3, 2, 0, 2, 2, 2, 3, 3, 0, 3, 2, 3, 0, 2, 2, 1, 0, 2, 3, 1, 2, 1, 0, 2, 3, 3, 2, 2, 2, 3, 3, 2, 2, 3, 2, 3, 0, 1, 2, 2, 2, 2, 1, 2, 2, 3, 2, 0, 0, 1]
+
+Process finished with exit code 0
+```
+
 
 ### Qn.
 Scenario and Problem to be solved
