@@ -59,7 +59,8 @@ class Individual:
 
     @staticmethod
     def generate_random():
-        r = np.ones((54, 1))
+        r = [1] * 54
+        r = np.array(r)
         for i in range(len(r)):
             r[i] = random.randint(0, 3)
         ind = Individual(rules=r)
