@@ -1,6 +1,8 @@
 # GeneticPainter
 An application of genetic algorithm for painter's problem.
+
 ![image](https://user-images.githubusercontent.com/69170305/227861668-fdec49f4-4276-4e0e-8f3a-6eb2a4e13343.png)
+
 Fig: AI Generated art of Prompt `Genetic Painter`
 
 ### NOTE
