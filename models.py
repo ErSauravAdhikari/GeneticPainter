@@ -2,6 +2,7 @@ import random
 
 import numpy as np
 
+from consts import MUTATION_RATE, CROSSOVER_RATE
 from painter_play import painter_play
 
 
@@ -11,11 +12,15 @@ class Individual:
         self._cached_fitness = self._fitness_calc()
 
     def _fitness_calc(self):
-        play_environment = np.zeros((8, 7))
+        play_environment = np.zeros((20, 40))
+        # print(play_environment)
         score, _, _ = painter_play(self._rules, play_environment)
         return score
 
     def mutate(self):
+        if random.random() > MUTATION_RATE:
+            return
+
         # A random portion is taken, and it's value is changed
         gene = random.randrange(0, len(self._rules))
         self._rules[gene] = random.randint(0, 3)
@@ -47,6 +52,11 @@ class Individual:
         for i in range(len(parents_1)):
             p1 = parents_1[i]
             p2 = parents_2[i]
+
+            if random.random() > CROSSOVER_RATE:
+                new_generation.append(p1)
+                new_generation.append(p2)
+                continue
 
             rules_size = len(p1.rules)
             c1 = [p1.rules[i] if i % 2 == 0 else p2.rules[i] for i in range(rules_size)]
