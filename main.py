@@ -1,5 +1,6 @@
 # Genetic Algorithm Implementation
 # Full code by Saurav Adhikari <github.com/ersauravadhikari>
+import math
 
 import numpy as np
 
@@ -24,29 +25,32 @@ def population_selection(population):
     """
 
     """
-    One method we could have done was this
     # 10% is elite
     # 10% is random generation
     # Remaining is tournament
-    ten_percentage = math.floor(POPULATION_SIZE / 10)
-
-    elite = sorted(current_population, key=lambda x: x.fitness)[0:ten_percentage]
-    random_ones = [Individual.generate_random() for _ in range(ten_percentage)]
-    scp = sorted(current_population, key=lambda x: x.fitness)[0: POPULATION_SIZE - 2 * ten_percentage]
-    selected_population = Individual.selection(scp)
-
-    selected_population = elite + random_ones + selected_population
     """
 
-    selected_population = Individual.selection(population)
-    return selected_population
+    sorted_current = sorted(current_population, key=lambda x: x.fitness, reverse=True)
+
+    ten_percentage = math.floor(POPULATION_SIZE / 10)
+    elite = sorted_current[0:ten_percentage]
+    random_ones = [Individual.generate_random() for _ in range(ten_percentage)]
+    scp = sorted_current[0: POPULATION_SIZE - 2 * ten_percentage]
+
+    sel_pop = Individual.selection(scp)
+    return sel_pop + elite + random_ones
 
 
 # Default Setup
 # new_population = current_population
 best = Individual.find_best(current_population)
+
+itr_count = 0
+
 while best.fitness < 1:
     # A simple check to see that the random population generation is indeed working
+
+    itr_count += 1
 
     # Selection method
     selected_population = population_selection(current_population)
@@ -66,6 +70,6 @@ while best.fitness < 1:
     new_best = Individual.find_best(new_gen)
     best = new_best
 
-    print(f"BEST IS: {best.fitness}")
+    print(f"The best individual in generation {itr_count} is: {best.fitness}")
 
 print("Found Solution: ", best.rules)
