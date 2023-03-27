@@ -15,7 +15,7 @@ def painter_play(rules, room):
 
     # add walls
     # env 0 - empty square, 1 - wall/obstruction, 2 - painted square
-    env = np.ones((M + 2, N + 2));
+    env = np.ones((M + 2, N + 2))
     for i in range(1, M + 1):
         for j in range(1, N + 1):
             env[i][j] = 0

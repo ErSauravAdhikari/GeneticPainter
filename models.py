@@ -2,17 +2,19 @@ import random
 
 import numpy as np
 
-from consts import MUTATION_RATE, CROSSOVER_RATE
+from consts import MUTATION_RATE, CROSSOVER_RATE, ENVIRONMENT_SIZE
 from painter_play import painter_play
 
 
 class Individual:
-    def __init__(self, rules):
+    def __init__(self, rules, environment=None):
         self._rules = rules
+        self._environment = environment if environment is not None else np.zeros(ENVIRONMENT_SIZE)
         self._cached_fitness = self._fitness_calc()
 
     def _fitness_calc(self):
-        play_environment = np.zeros((20, 40))
+        play_environment = np.copy(self._environment)
+
         # print(play_environment)
         score, _, _ = painter_play(self._rules, play_environment)
         return score
@@ -68,12 +70,12 @@ class Individual:
         return new_generation
 
     @staticmethod
-    def generate_random():
+    def generate_random(environment=None):
         r = [1] * 54
         r = np.array(r)
         for i in range(len(r)):
             r[i] = random.randint(0, 3)
-        ind = Individual(rules=r)
+        ind = Individual(rules=r, environment=environment)
         return ind
 
     @staticmethod
